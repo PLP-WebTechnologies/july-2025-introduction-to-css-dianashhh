@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card sections */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #357ab8;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eee;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
+
+/* -------------------------------
+   BOX MODEL DEMO VISUAL
+-------------------------------- */
+.box-demo {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.margin-layer {
+  background-color: #fdd;  /* light red = margin */
+  padding: 10px;
+}
+
+.border-layer {
+  background-color: #dfd;  /* light green = border */
+  padding: 10px;
+  border: 5px solid #090;  /* green border */
+}
+
+.padding-layer {
+  background-color: #ddf;  /* light blue = padding */
+  padding: 20px;
+}
+
+.content-layer {
+  background-color: #fffa8b; /* yellow = content */
+  padding: 15px;
+}
+/* -------------------------------
+   BOX MODEL DEMO VISUAL
+   Each nested layer represents
+   Margin → Border → Padding → Content
+-------------------------------- */
+
+/* The container for the whole demo */
+.box-demo {
+  margin-top: 20px;       /* spacing above the demo */
+  text-align: center;     /* centers text labels */
+  font-weight: bold;      /* makes labels stand out */
+}
+
+/* MARGIN layer (outermost) */
+.margin-layer {
+  background-color: #fdd; /* light red background shows margin area */
+  padding: 10px;          /* space inside margin box so the border layer is visible */
+}
+
+/* BORDER layer */
+.border-layer {
+  background-color: #dfd; /* light green background shows border area */
+  padding: 10px;          /* spacing so the padding layer fits inside */
+  border: 5px solid #090; /* visible solid green border */
+}
+
+/* PADDING layer */
+.padding-layer {
+  background-color: #ddf; /* light blue background shows padding area */
+  padding: 20px;          /* spacing between content and border */
+}
+
+/* CONTENT layer (innermost) */
+.content-layer {
+  background-color: #fffa8b; /* yellow background shows content box */
+  padding: 15px;             /* internal spacing inside the content */
+}
